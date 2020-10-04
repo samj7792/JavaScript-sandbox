@@ -150,66 +150,47 @@
 
 // String Methods and Concatenation
 {
-  const firstName = 'William';
-  const lastName = 'Johnson';
-  const age = 36;
-  const str = 'Hello my name is Sam';
-  const tags = 'javascript, css, html';
-
-  let val;
-
-  val = firstName + lastName;
-
-  // Concatenation
-  val = firstName + ' ' + lastName;
-
-  // Append
-  val = 'Brad ';
-  val += 'Traversy';
-
-  val = 'Hello, my name is ' + firstName + ' and I am ' + age;
-
-  // Escaping (using a backslash to have a character ignored(prettier prevents this?)) \' within single quotes wont end the quote
-  val = "That's awesome, I can't wait";
-
-  // Length
-  val = firstName.length;
-
-  // concat() method
-  val = firstName.concat(' ', lastName);
-
-  // Change case
-  val = firstName.toUpperCase();
-  val = firstName.toLowerCase();
-
-  val = firstName[0];
-
-  // indexOf()
-  val = firstName.indexOf('l');
-  val = firstName.lastIndexOf('l');
-
-  // charAt()
-  val = firstName.charAt(1);
-
-  // Get last char
-  val = firstName.charAt(firstName.length - 1);
-
-  // substring()
-  val = firstName.substring(0, 4);
-
-  // slice()
-  val = firstName.slice(0, 4);
-  val = firstName.slice(-3); // starts from the end
-
-  // split()
-  val = str.split(' ');
-  val = tags.split(',');
-
-  // replace()
-  val = str.replace('Sam', 'Jack');
-
-  // includes()
-  val = str.includes('Tom');
-
-  console.log(val);
+  // const firstName = 'William';
+  // const lastName = 'Johnson';
+  // const age = 36;
+  // const str = 'Hello my name is Sam';
+  // const tags = 'javascript, css, html';
+  // let val;
+  // val = firstName + lastName;
+  // // Concatenation
+  // val = firstName + ' ' + lastName;
+  // // Append
+  // val = 'Brad ';
+  // val += 'Traversy';
+  // val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+  // // Escaping (using a backslash to have a character ignored(prettier prevents this?)) \' within single quotes wont end the quote
+  // val = "That's awesome, I can't wait";
+  // // Length
+  // val = firstName.length;
+  // // concat() method
+  // val = firstName.concat(' ', lastName);
+  // // Change case
+  // val = firstName.toUpperCase();
+  // val = firstName.toLowerCase();
+  // val = firstName[0];
+  // // indexOf()
+  // val = firstName.indexOf('l');
+  // val = firstName.lastIndexOf('l');
+  // // charAt()
+  // val = firstName.charAt(1);
+  // // Get last char
+  // val = firstName.charAt(firstName.length - 1);
+  // // substring()
+  // val = firstName.substring(0, 4);
+  // // slice()
+  // val = firstName.slice(0, 4);
+  // val = firstName.slice(-3); // starts from the end
+  // // split()
+  // val = str.split(' ');
+  // val = tags.split(',');
+  // // replace()
+  // val = str.replace('Sam', 'Jack');
+  // // includes()
+  // val = str.includes('Tom');
+  // console.log(val);
 }
