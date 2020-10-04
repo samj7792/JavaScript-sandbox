@@ -233,13 +233,11 @@
 // Arrays and Array Methods
 {
   // Create some arrays
-  const numbers = [1, 2, 3, 4, 5];
-  const numbers2 = new Array(33, 55, 31, 4, 73);
-  const fruit = ['Apple', 'Kiwi', 'Bannana', 'Orange'];
-  const mixed = [2, 'Hello', true, undefined, null, { a: 1, b: 1 }, new Date()];
-
-  let val;
-
+  // const numbers = [1, 2, 3, 4, 5];
+  // const numbers2 = new Array(33, 55, 31, 4, 73);
+  // const fruit = ['Apple', 'Kiwi', 'Bannana', 'Orange'];
+  // const mixed = [2, 'Hello', true, undefined, null, { a: 1, b: 1 }, new Date()];
+  // let val;
   // Get array length
   // val = numbers.length;
   // // Check if is array
@@ -250,7 +248,6 @@
   // numbers[2] = 100;
   // // Find index of value
   // val = numbers.indexOf(4);
-
   // // MUTATING ARRAYS
   // // Add on to end of array
   // numbers.push(250);
@@ -264,31 +261,58 @@
   // numbers.splice(2, 1); // Takes out the one value at the 2nd index
   // // reverse
   // numbers.reverse();
-
   // Concatenate array
   // val = numbers.concat(numbers2);
-
   // // Sort
   // val = fruit.sort();
   // val = numbers2.sort();
-
   // // use the "compare function"
   // val = numbers2.sort(function (x, y) {
   //   return x - y;
   // });
-
   // // Reverse sort
   // val = numbers2.sort(function (x, y) {
   //   return y - x;
   // });
-
   // // Find
   // function under50(num) {
   //   return num < 50;
   // }
-
   // val = numbers2.find(under50); // finds first number under 50
-
   // console.log(numbers);
   // console.log(val);
+}
+
+// Object Literals
+{
+  // const person = {
+  //   firstName: 'Steve',
+  //   lastName: 'Smith',
+  //   age: 30,
+  //   email: 'steve@gmail.com',
+  //   hobbies: ['music', 'sports'],
+  //   address: {
+  //     city: 'Miami',
+  //     state: 'FL',
+  //   },
+  //   getBirthYear: function () {
+  //     return 2020 - this.age; // need to use this to get age
+  //   },
+  // };
+  // let val;
+  // val = person;
+  // // Get specific value
+  // val = person.firstName; // dot notation is the recommended syntax
+  // val = person['firstName'];
+  // val = person.hobbies[1];
+  // val = person.address.state;
+  // val = person.getBirthYear();
+  // console.log(val);
+  // const people = [
+  //   { name: 'John', age: 30 },
+  //   { name: 'Mike', age: 23 },
+  // ];
+  // for (let i = 0; i < people.length; i++) {
+  //   console.log(people[i].name);
+  // }
 }
