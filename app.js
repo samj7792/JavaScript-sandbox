@@ -316,3 +316,27 @@
   //   console.log(people[i].name);
   // }
 }
+
+// Dates and Times
+{
+  // let val;
+  // const today = new Date(); // Date is an object
+  // let birthday = new Date('7-7-1992');
+  // birthday = new Date('July 7 1992');
+  // val = today.getMonth(); // this is 0 based so 9 refers to October
+  // val = today.getDate();
+  // val = today.getDay(); // day of week
+  // val = today.getFullYear();
+  // val = today.getHours();
+  // val = today.getMinutes();
+  // val = today.getSeconds();
+  // val = today.getMilliseconds();
+  // val = today.getTime();
+  // birthday.setMonth(2);
+  // birthday.setDate(12);
+  // birthday.setFullYear(1990);
+  // birthday.setHours(1);
+  // birthday.setMinutes(12);
+  // birthday.setSeconds(39);
+  // console.log(birthday);
+}
