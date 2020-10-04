@@ -340,3 +340,72 @@
   // birthday.setSeconds(39);
   // console.log(birthday);
 }
+
+// If Statements and Comparison Operators
+{
+  // let id = 100;
+  // EQUAL TO
+  // if (id == 101) {
+  //   console.log('correct');
+  // } else {
+  //   console.log('incorrect');
+  // }
+  // // NOT EQUAL TO
+  // if (id != 101) {
+  //   console.log('correct');
+  // } else {
+  //   console.log('incorrect');
+  // }
+  // // EQUAL TO VALUE AND TYPE
+  // if (id === 100) {
+  //   console.log('correct');
+  // } else {
+  //   console.log('incorrect');
+  // }
+  // // NOT EQUAL TO VALUE AND TYPE
+  // if (id !== 100) {
+  //   console.log('correct');
+  // } else {
+  //   console.log('incorrect');
+  // }
+  // Test if undefined
+  // if (typeof id !== 'undefined') {
+  //   console.log(`The ID is ${id}`);
+  // } else {
+  //   console.log('no id');
+  // }
+  // GREATER OR LESS THAN
+  // if (id > 200) {
+  //   console.log('correct');
+  // } else {
+  //   console.log('incorrect');
+  // }
+  // // IF ELSE
+  // const color = 'yellow';
+  // if (color === 'red') {
+  //   console.log('Color is red');
+  // } else if (color === 'blue') {
+  //   console.log('Color is blue');
+  // } else {
+  //   console.log('Color is not red or blue');
+  // }
+  // // LOGICAL OPERATORS
+  // const name = 'Steve';
+  // const age = 20;
+  // AND &&
+  // if (age > 0 && age < 12) {
+  //   console.log(`${name} is a child`);
+  // } else if (age >= 13 && age <= 19) {
+  //   console.log(`${name} is a teen`);
+  // } else {
+  //   console.log(`${name} is an adult`);
+  // }
+  //   // OR ||
+  //   if (age < 16 || age > 65) {
+  //     console.log(`${name} cannot participate`);
+  //   } else {
+  //     console.log(`${name} can participate`);
+  //   }
+  //   // TERNARY OPERATOR
+  //   console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+}
