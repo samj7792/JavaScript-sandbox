@@ -412,44 +412,81 @@
 
 // Switches
 {
-  const color = 'red';
+  // const color = 'red';
+  // switch (color) {
+  //   case 'blue':
+  //     console.log('Color is blue');
+  //     break;
+  //   case 'red':
+  //     console.log('Color is red');
+  //     break;
+  //   default:
+  //     console.log('color is not red or blue');
+  //     break;
+  // }
+  // let day;
+  // switch (new Date().getDay()) {
+  //   case 0:
+  //     day = 'Sunday';
+  //     break;
+  //   case 1:
+  //     day = 'Monday';
+  //     break;
+  //   case 2:
+  //     day = 'Tuesday';
+  //     break;
+  //   case 3:
+  //     day = 'Wednesday';
+  //     break;
+  //   case 4:
+  //     day = 'Thursday';
+  //     break;
+  //   case 5:
+  //     day = 'Friday';
+  //     break;
+  //   case 6:
+  //     day = 'Saturday';
+  //     break;
+  // }
+  // console.log(`Today is ${day}`);
+}
 
-  switch (color) {
-    case 'blue':
-      console.log('Color is blue');
-      break;
-    case 'red':
-      console.log('Color is red');
-      break;
-    default:
-      console.log('color is not red or blue');
-      break;
-  }
-
-  let day;
-
-  switch (new Date().getDay()) {
-    case 0:
-      day = 'Sunday';
-      break;
-    case 1:
-      day = 'Monday';
-      break;
-    case 2:
-      day = 'Tuesday';
-      break;
-    case 3:
-      day = 'Wednesday';
-      break;
-    case 4:
-      day = 'Thursday';
-      break;
-    case 5:
-      day = 'Friday';
-      break;
-    case 6:
-      day = 'Saturday';
-      break;
-  }
-  console.log(`Today is ${day}`);
+// Function Declarations and Expressions
+{
+  // // FUNCTION DECLARATIONS
+  // function greet(firstName = 'John', lastName = 'Doe') {
+  //   return `Hello ${firstName} ${lastName}`;
+  // }
+  // console.log(greet()); // By defining the defaults in the function declaration's arguments we prevent having undefined in the return
+  // console.log(greet('Sam', 'Smith'));
+  // // FUNCTION EXPRESSIONS
+  // const square = function (x) {
+  //   return x * x;
+  // };
+  // console.log(square(8));
+  // // IMMIDIATELY INVOKABLE FUNCTION EXPRESSIONS -IIFEs
+  // (function () {
+  //   console.log('IIFE Ran...');
+  // })();
+  // (function (name) {
+  //   console.log(`Hello ${name}`);
+  // })('Brad');
+  // // PROPERTY METHODS
+  // // functions within objects are called methods
+  // const todo = {
+  //   add: function () {
+  //     console.log('Add todo...');
+  //   },
+  //   edit: function (id) {
+  //     console.log(`Edit todo ${id}`);
+  //   },
+  // };
+  // // You can also add a method to an object with dot notation
+  // todo.delete = function () {
+  //   console.log('Delete todo...');
+  // };
+  // // calling the methods
+  // todo.add();
+  // todo.edit(22);
+  // todo.delete();
 }
