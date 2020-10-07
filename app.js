@@ -490,3 +490,56 @@
   // todo.edit(22);
   // todo.delete();
 }
+
+// General Loops
+{
+  // // FOR LOOP
+  // for (let i = 0; i < 10; i++) {
+  //   if (i === 2) {
+  //     console.log('2 is my favorite number');
+  //     continue; // continues to next iteration
+  //   }
+  //   if (i === 5) break;
+  //   console.log(`Number ${i}`);
+  // }
+  // // WHILE LOOP
+  // let i = 0;
+  // while (i < 10) {
+  //   console.log(`Number ${i}`);
+  //   i++;
+  // }
+  // // DO WHILE
+  // let i = 0;
+  // do {
+  //   console.log(`Number ${i}`);
+  //   i++;
+  // } while (i < 10);
+  // // LOOP THROUGH ARRAY
+  // const cars = ['Ford', 'Honda', 'Chevy'];
+  // for (let i = 0; i < cars.length; i++) {
+  //   console.log(`Car is a ${cars[i]}`);
+  // }
+  // // .forEach
+  // cars.forEach(function (car) {
+  //   console.log(car);
+  // });
+  // // .map
+  // const users = [
+  //   { id: 1, name: 'John' },
+  //   { id: 2, name: 'Sara' },
+  //   { id: 3, name: 'Karen' },
+  // ];
+  // const ids = users.map((user) => user.id);
+  // console.log(ids);
+  // // for in
+  // const user = {
+  //   firstName: 'John',
+  //   lastName: 'Doe',
+  //   age: 30,
+  // };
+  // // x is the key, user[x] is the value
+  // for (let x in user) {
+  //   console.log(x);
+  //   console.log(`${x} : ${user[x]}`);
+  // }
+}
