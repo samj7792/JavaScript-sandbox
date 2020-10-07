@@ -543,3 +543,52 @@
   //   console.log(`${x} : ${user[x]}`);
   // }
 }
+
+// The Window Object
+{
+  // The window is the global object
+  // WINDOW METHODS / OBJECTS / PROPERTIES
+  // // Alert
+  // window.alert('Hello World');
+  // // Prompts
+  // const input = prompt();
+  // alert(input);
+  // // Confirm
+  // if (confirm('Are you sure')) {
+  //   console.log('Yes');
+  // } else {
+  //   console.log('No');
+  // }
+  // // These aren't generally used in modern projects
+  // let val;
+  // // Outer height and width
+  // val = window.outerHeight;
+  // val = window.outerWidth;
+  // // Inner height and width (within scroll bar)
+  // val = window.innerHeight;
+  // val = window.innerWidth;
+  // // Scroll points
+  // val = window.scrollY;
+  // val = window.scrollX;
+  // // Location object
+  // val = window.location;
+  // val = window.location.hostname;
+  // val = window.location.port;
+  // val = window.location.href;
+  // val = window.location.search; // shows query string in url (/?id=1)
+  // // Redirect
+  // window.location.href = 'http://google.com';
+  // // Reload
+  // window.location.reload();
+  // // History Object
+  // // window.history.go(-1); // takes you back how ever many pages you specify
+  // val = window.history.length;
+  // // Navigator Object
+  // val = window.navigator;
+  // val = window.navigator.appName;
+  // val = window.navigator.appVersion;
+  // val = window.navigator.userAgent;
+  // val = window.navigator.platform;
+  // val = window.navigator.language;
+  // console.log(val);
+}
