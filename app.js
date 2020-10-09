@@ -618,3 +618,14 @@
   // }
   // console.log('Global Scope: ', a, b, c); // var effects the global scope
 }
+
+// Mouse Event
+{
+  document.body.querySelector('div').addEventListener('mousemove', (e) => {
+    console.log(e.type);
+    document.body.querySelector('h2').innerText = `${e.offsetX} ${e.offsetY}`;
+    document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, ${
+      (e.offsetX + e.offsetY) / 2
+    })`;
+  });
+}
