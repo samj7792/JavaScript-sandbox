@@ -858,4 +858,38 @@
     // console.log(mary.greeting());
     // console.log(Person.addNumbers(1, 2));
   }
+
+  // Sub Classes
+  {
+    class Person {
+      constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+      }
+
+      greeting() {
+        return `Hello ${this.firstName} ${this.lastName}`;
+      }
+    }
+
+    class Customer extends Person {
+      constructor(firstName, lastName, phone, membership) {
+        super(firstName, lastName); // super calls the parent class constructor
+
+        this.phone = phone;
+        this.membership = membership;
+      }
+
+      static getMemberCost() {
+        return 500;
+      }
+    }
+
+    const john = new Customer('John', 'Smith', '444-444-4444', 'Standard');
+
+    console.log(john);
+    console.log(john.greeting());
+    console.log(Customer.getMemberCost()); // call static methods with the class name
+    // Customer has access to Person class methods, but Person does not have access to Customer methods
+  }
 }
