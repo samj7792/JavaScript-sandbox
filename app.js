@@ -800,32 +800,62 @@
 
   // Using Object.create
   {
-    const personPrototypes = {
-      greeting: function () {
-        return `Hello there ${this.firstName} ${this.lastName}`;
-      },
-      getsMarried: function (newLastName) {
-        this.lastName = newLastName;
-      },
-    };
+    // const personPrototypes = {
+    //   greeting: function () {
+    //     return `Hello there ${this.firstName} ${this.lastName}`;
+    //   },
+    //   getsMarried: function (newLastName) {
+    //     this.lastName = newLastName;
+    //   },
+    // };
+    // const mary = Object.create(personPrototypes);
+    // mary.firstName = 'Mary';
+    // mary.lastName = 'Smith';
+    // mary.age = 30;
+    // console.log(mary);
+    // console.log(mary.greeting());
+    // mary.getsMarried('Thomson');
+    // console.log(mary.greeting());
+    // const brad = Object.create(personPrototypes, {
+    //   firstName: { value: 'Brad' },
+    //   lastName: { value: 'Traversy' },
+    //   age: { value: 36 },
+    // });
+    // console.log(brad);
+    // console.log(brad.greeting());
+  }
 
-    const mary = Object.create(personPrototypes);
-    mary.firstName = 'Mary';
-    mary.lastName = 'Smith';
-    mary.age = 30;
-
-    console.log(mary);
-    console.log(mary.greeting());
-    mary.getsMarried('Thomson');
-    console.log(mary.greeting());
-
-    const brad = Object.create(personPrototypes, {
-      firstName: { value: 'Brad' },
-      lastName: { value: 'Traversy' },
-      age: { value: 36 },
-    });
-
-    console.log(brad);
-    console.log(brad.greeting());
+  // ES6 Classes
+  {
+    // class Person {
+    //   constructor(firstName, lastName, dob) {
+    //     this.firstName = firstName;
+    //     this.lastName = lastName;
+    //     this.birthday = new Date(dob);
+    //   }
+    //   // any method added to the class automatically is added in __proto__
+    //   greeting() {
+    //     return `Hello ${this.firstName} ${this.lastName}`;
+    //   }
+    //   calcAge() {
+    //     const diff = Date.now() - this.birthday.getTime();
+    //     const ageDate = new Date(diff);
+    //     return Math.abs(ageDate.getUTCFullYear() - 1970);
+    //   }
+    //   getsMarried(newLastName) {
+    //     this.lastName = newLastName;
+    //   }
+    //   // Static method
+    //   static addNumbers(x, y) {
+    //     return x + y;
+    //   }
+    // }
+    // const mary = new Person('Mary', 'Smith', '11/6/1990');
+    // console.log(mary);
+    // console.log(mary.greeting());
+    // console.log(mary.calcAge());
+    // mary.getsMarried('Williams');
+    // console.log(mary.greeting());
+    // console.log(Person.addNumbers(1, 2));
   }
 }
