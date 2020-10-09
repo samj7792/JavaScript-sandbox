@@ -660,86 +660,110 @@
 {
   // Constructors and the 'this' keyword
   {
-    // object literals
+    // // object literals
     // const brad = {
     //   name: 'brad',
     //   age: 30,
     // };
-
-    // Person constructor Should be capitalized
-    function Person(name, dob) {
-      this.name = name; // this keyword refers to the current instance of the object
-      console.log(this);
-      // this.age = age;
-      this.birthday = new Date(dob);
-      this.calcAge = function () {
-        const diff = Date.now() - this.birthday.getTime();
-        const ageDate = new Date(diff);
-        return Math.abs(ageDate.getUTCFullYear() - 1970);
-      };
-    }
-
-    console.log(this); // Using this in the global scope refers to the Window object
-
-    // const brad = new Person('Brad', 35);
-    // const john = new Person('John', 21);
-
-    const brad = new Person('Brad', '7/7/1992');
-
-    console.log(brad.calcAge());
+    // // Person constructor Should be capitalized
+    // function Person(name, dob) {
+    //   this.name = name; // this keyword refers to the current instance of the object
+    //   console.log(this);
+    //   // this.age = age;
+    //   this.birthday = new Date(dob);
+    //   this.calcAge = function () {
+    //     const diff = Date.now() - this.birthday.getTime();
+    //     const ageDate = new Date(diff);
+    //     return Math.abs(ageDate.getUTCFullYear() - 1970);
+    //   };
+    // }
+    // console.log(this); // Using this in the global scope refers to the Window object
+    // // const brad = new Person('Brad', 35);
+    // // const john = new Person('John', 21);
+    // const brad = new Person('Brad', '7/7/1992');
+    // console.log(brad.calcAge());
   }
 
   // Built in Constructors
   {
-    // String
-    const name1 = 'John';
-    const name2 = new String('John');
-
-    // name2.foo = 'bar';
-
-    console.log(name1, name2);
-
-    console.log(typeof name2);
-
-    // type of name one is an object, not string
-    if (name2 === 'John') {
-      console.log('YES');
-    } else console.log('NO');
-
-    // Number
-    const num1 = 5;
-    const num2 = new Number(6);
-    console.log(num2, typeof num2);
-
-    // Bool
-    const bool1 = true;
-    const bool2 = new Boolean(true);
-
-    // Functions
-    const getSum1 = function (x, y) {
-      return x + y;
-    };
-
-    const getSum2 = new Function('x', 'y', 'return x + y');
-
-    console.log(getSum2(1, 2));
-
-    // Object
-    const john = { name: 'John' };
-    const john2 = new Object({ name: 'John' });
-    console.log(john);
-    console.log(john2);
-
-    // Array
-    const array = [1, 2, 3];
-    const array2 = new Array(1, 2, 3, 4);
-    console.log(array);
-    console.log(array2);
-
-    // Regular Expression RegEx
-    const regex1 = /\w+/;
-    const regex2 = new RegExp('\\w+');
-    console.log(regex1);
-    console.log(regex2);
+    // // String
+    // const name1 = 'John';
+    // const name2 = new String('John');
+    // // name2.foo = 'bar';
+    // console.log(name1, name2);
+    // console.log(typeof name2);
+    // // type of name one is an object, not string
+    // if (name2 === 'John') {
+    //   console.log('YES');
+    // } else console.log('NO');
+    // // Number
+    // const num1 = 5;
+    // const num2 = new Number(6);
+    // console.log(num2, typeof num2);
+    // // Bool
+    // const bool1 = true;
+    // const bool2 = new Boolean(true);
+    // // Functions
+    // const getSum1 = function (x, y) {
+    //   return x + y;
+    // };
+    // const getSum2 = new Function('x', 'y', 'return x + y');
+    // console.log(getSum2(1, 2));
+    // // Object
+    // const john = { name: 'John' };
+    // const john2 = new Object({ name: 'John' });
+    // console.log(john);
+    // console.log(john2);
+    // // Array
+    // const array = [1, 2, 3];
+    // const array2 = new Array(1, 2, 3, 4);
+    // console.log(array);
+    // console.log(array2);
+    // // Regular Expression RegEx
+    // const regex1 = /\w+/;
+    // const regex2 = new RegExp('\\w+');
+    // console.log(regex1);
+    // console.log(regex2);
   }
+
+  // Prototypes Explained
+  {
+    // Object.prototype
+    // Person.prototype
+    // function Person(firstName, lastName, dob) {
+    //   this.firstName = firstName; // this keyword refers to the current instance of the object
+    //   this.lastName = lastName;
+    //   this.birthday = new Date(dob);
+    //   // this.calcAge = function () {
+    //   //   const diff = Date.now() - this.birthday.getTime();
+    //   //   const ageDate = new Date(diff);
+    //   //   return Math.abs(ageDate.getUTCFullYear() - 1970);
+    //   // };
+    // }
+    // // Calculate age
+    // Person.prototype.calcAge = function () {
+    //   const diff = Date.now() - this.birthday.getTime();
+    //   const ageDate = new Date(diff);
+    //   return Math.abs(ageDate.getUTCFullYear() - 1970);
+    // };
+    // // Get full name
+    // Person.prototype.getFullName = function () {
+    //   return `${this.firstName} ${this.lastName}`;
+    // };
+    // // Gets married
+    // Person.prototype.getsMarried = function (newLastName) {
+    //   this.lastName = newLastName;
+    // };
+    // const john = new Person('John', 'Doe', '8/12/1990');
+    // const mary = new Person('Mary', 'Johnson', 'March 20 1970');
+    // console.log(mary);
+    // console.log(john.calcAge());
+    // console.log(mary.getFullName());
+    // mary.getsMarried('Smith');
+    // console.log(mary.getFullName());
+    // console.log(mary.hasOwnProperty('firstName'));
+    // console.log(mary.hasOwnProperty('getFullName')); // not part of the property, it is in the prototype
+  }
+
+  // Prototypal Inheritance
 }
