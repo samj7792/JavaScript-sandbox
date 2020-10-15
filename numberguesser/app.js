@@ -73,25 +73,50 @@ minNum.textContent = min;
 maxNum.textContent = max;
 
 // Listen for guess
-guessBtn.addEventListener('click', function () {
+guessBtn.addEventListener('click', () => {
   let guess = parseInt(guessInput.value);
 
   // Validate
   if (isNaN(guess) || guess < min || guess > max) {
-    setMessage(`Please enter a number between ${min} and ${max}`, 'red');
+    setMessage(`Please enter a number between ${min} and ${max}.`, 'red');
   }
 
   // Check if won
   if (guess === winningNum) {
-    // Disable input
-    guessInput.disabled = true;
-    // Change border color
-    guessInput.style.borderColor = 'green';
-    // Set message
-    setMessage(`${winningNum} is correct!`, 'green');
+    // Game over - won
+    gameOver(true, `${winningNum} is correct! Try again?`);
   } else {
+    // Decrement guessesLeft
+    guessesLeft--;
+    // Change border color
+    guessInput.style.borderColor = 'red';
+    // Clear input
+    guessInput.value = '';
+    if (guessesLeft > 0) {
+      // Set message
+      setMessage(
+        `${guess} is incorrect, you have ${guessesLeft} guesses remaining.`,
+        'red'
+      );
+    } else {
+      // Game over - lost
+      gameOver(false, `Sorry, the answer was ${winningNum}. Try again?`);
+    }
   }
 });
+
+// Game over
+const gameOver = (won, msg) => {
+  let color;
+  won ? (color = 'green') : (color = 'red');
+
+  // Disable input
+  guessInput.disabled = true;
+  // Change border color
+  guessInput.style.borderColor = color;
+  // Set message
+  setMessage(msg, color);
+};
 
 // Set Message
 const setMessage = (msg, color) => {
