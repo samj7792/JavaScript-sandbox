@@ -1,0 +1,7 @@
+.btn:hover {
+  background: lightgrey;
+}
+
+.btn:active {
+  background: gray;
+}

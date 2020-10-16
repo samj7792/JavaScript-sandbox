@@ -10,49 +10,48 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="app.css" />
 
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <h1 class="mt-5">Calculator</h1>
-      <div class="card" style="width: 20rem">
-        <!-- <div class="card-body ml-5"> -->
-        <div class="container-fluid">
-          <div id="solution" class="row border">Solution</div>
+      <div class="card p-2 text-center" style="width: 20rem">
+        <div id="solution" class="border rounded p-2 bg-light">
+          <strong>Solution</strong>
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div id="one" class="col border">1</div>
-            <div id="two" class="col border">2</div>
-            <div id="three" class="col border">3</div>
-            <div id="plus" class="col border">+</div>
+            <div id="one" class="col border btn">1</div>
+            <div id="two" class="col border btn">2</div>
+            <div id="three" class="col border btn">3</div>
+            <div id="plus" class="col border btn">+</div>
           </div>
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div id="four" class="col border">4</div>
-            <div id="five" class="col border">5</div>
-            <div id="six" class="col border">6</div>
-            <div id="minus" class="col border">-</div>
+            <div id="four" class="col border btn">4</div>
+            <div id="five" class="col border btn">5</div>
+            <div id="six" class="col border btn">6</div>
+            <div id="minus" class="col border btn">-</div>
           </div>
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div id="seven" class="col border">7</div>
-            <div id="eight" class="col border">8</div>
-            <div id="nine" class="col border">9</div>
-            <div id="multiply" class="col border">x</div>
+            <div id="seven" class="col border btn">7</div>
+            <div id="eight" class="col border btn">8</div>
+            <div id="nine" class="col border btn">9</div>
+            <div id="multiply" class="col border btn">x</div>
           </div>
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div id="zero" class="col-9 border">0</div>
-            <div id="divide" class="col-3 border">/</div>
+            <div id="zero" class="col-6 border btn">0</div>
+            <div id="equals" class="col-3 border btn">=</div>
+            <div id="divide" class="col-3 border btn">/</div>
           </div>
         </div>
-
-        <!-- </div> -->
       </div>
     </div>
   </body>
