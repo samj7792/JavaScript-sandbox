@@ -1,5 +1,5 @@
 let inputs = document.querySelectorAll('.btn');
-inputs.forEach((input) => console.log(input.value));
+let clear = document.getElementById('clear');
 
 let equation = '',
   solution = document.getElementById('solution');
@@ -7,36 +7,43 @@ let equation = '',
 inputs.forEach((input) => {
   input.addEventListener('click', function () {
     equation += input.value;
+    console.log(equation);
 
-    solution.innerText === 'Solution'
+    solution.innerText === '...'
       ? (solution.innerText = input.value)
       : (solution.innerText += input.value);
 
     if (input.value === '=') {
-      console.log(equation);
+      // console.log(equation);
       if (equation.includes('+')) {
         equation = equation.split('+');
         equation = equation.map((num) => parseFloat(num));
         solution.innerText = equation.reduce((a, b) => a + b);
-        equation = '';
+        equation = solution.innerText;
       } else if (equation.includes('-')) {
         equation = equation.split('-');
         equation = equation.map((num) => parseFloat(num));
         solution.innerText = equation.reduce((a, b) => a - b);
-        equation = '';
+        equation = solution.innerText;
       } else if (equation.includes('x')) {
         equation = equation.split('x');
         equation = equation.map((num) => parseFloat(num));
         solution.innerText = equation.reduce((a, b) => a * b);
-        equation = '';
+        equation = solution.innerText;
       } else if (equation.includes('/')) {
         equation = equation.split('/');
         equation = equation.map((num) => parseFloat(num));
         solution.innerText = equation.reduce((a, b) => a / b);
-        equation = '';
+        equation = solution.innerText;
       }
     }
   });
+});
+
+// Clear
+clear.addEventListener('click', function () {
+  solution.innerHTML = '<strong>...</strong>';
+  equation = '';
 });
 
 // Working solution not so pretty
