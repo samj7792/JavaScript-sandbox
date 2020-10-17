@@ -1,6 +1,6 @@
-let inputs = document.querySelectorAll('.btn');
-let clear = document.getElementById('clear');
-
+const inputs = document.querySelectorAll('.btn'),
+  clear = document.getElementById('clear'),
+  del = document.getElementById('delete');
 let equation = '',
   solution = document.getElementById('solution');
 
@@ -9,7 +9,7 @@ inputs.forEach((input) => {
     equation += input.value;
     console.log(equation);
 
-    solution.innerText === '...'
+    solution.innerText === '. . .'
       ? (solution.innerText = input.value)
       : (solution.innerText += input.value);
 
@@ -42,8 +42,16 @@ inputs.forEach((input) => {
 
 // Clear
 clear.addEventListener('click', function () {
-  solution.innerHTML = '<strong>...</strong>';
+  solution.innerText = '. . .';
   equation = '';
+});
+
+// Delete / Backspace
+del.addEventListener('click', async function () {
+  let equation = await equation.slice(0, -1);
+  solution.innerText === ''
+    ? (solution.innerText = '. . .')
+    : (solution.innerText = equation);
 });
 
 // Working solution not so pretty

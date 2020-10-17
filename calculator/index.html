@@ -18,12 +18,17 @@
     <div class="container">
       <h1 class="mt-5">Calculator</h1>
       <div class="card p-2 text-center" style="width: 20rem">
-        <div id="solution" class="border rounded p-2 bg-light">
-          <strong>...</strong>
+        <div class="border rounded p-2 bg-light text-right">
+          <strong id="solution" class="pr-2">. . .</strong>
         </div>
         <div class="container-fluid">
           <div class="row">
-            <button id="clear" class="col border btn">CLEAR</button>
+            <button id="clear" class="col-9 border rounded btn-danger">
+              CLEAR
+            </button>
+            <button id="delete" class="col border rounded btn-warning">
+              DEL
+            </button>
           </div>
         </div>
         <div class="container-fluid">
